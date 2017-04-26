@@ -4,6 +4,6 @@ interface AuthConfiguration {
 }
 
 export const myConfig: AuthConfiguration = {
-    clientID: 'zTpWcPCaQUvrncaaKnBZDcYWt8XfcoO4',
+    clientID: 'vXn03yK4vxVxwvOwfR7yx7wSjygisXuJ',
     domain: 'vanderson.auth0.com'
 };

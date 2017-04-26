@@ -1,7 +1,7 @@
 {
-  "name": "angular2-quickstart",
+  "name": "G5-carreiras",
   "version": "1.0.0",
-  "description": "Very basic Angular 2 structure appication",
+  "description": "App de Teste vocacional online e gratuito criado para a partir da Teoria das Escolhas Vocacionais do Linkedin.",
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
     "docker-build": "docker build -t ng2-quickstart .",
@@ -18,7 +18,7 @@
     "webdriver:update": "webdriver-manager update"
   },
   "keywords": [],
-  "author": "",
+  "author": "VandersonPaim - dev, Marcio - Projeto ,  - Teste",
   "license": "MIT",
   "dependencies": {
     "@angular/common": "2.0.0",
