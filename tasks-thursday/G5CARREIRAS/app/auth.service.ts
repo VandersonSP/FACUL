@@ -8,6 +8,7 @@ declare var Auth0Lock: any;
 @Injectable()
 export class Auth {
   // Configure Auth0
+  //lock = new Auth0Lock(myConfig.clientID, myConfig.domain, {});
   lock = new Auth0Lock(  myConfig.clientID, myConfig.domain, {
         allowedConnections: ["Username-Password-Authentication","google-oauth2","facebook","twitter"],
         rememberLastLogin: true,
@@ -27,13 +28,14 @@ export class Auth {
   }
 
   public login() {
+    // Call the show method to display the widget.
     this.lock.show();
   };
 
   public authenticated() {
     // Check if there's an unexpired JWT
     // It searches for an item in localStorage with key == 'id_token'
-    return tokenNotExpired();
+    return tokenNotExpired('id_token');
   };
 
   public logout() {
