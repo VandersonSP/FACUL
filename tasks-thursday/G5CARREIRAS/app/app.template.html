@@ -2,8 +2,8 @@
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">G5 Carreiras</a>
-      <button class="btn btn-primary btn-margin" (click)="auth.login()" *ngIf="!auth.authenticated()" style="float:rigth">Log In</button>
-      <button class="btn btn-primary btn-margin" (click)="auth.logout()" *ngIf="auth.authenticated()" style="float:rigth">Log Out</button>
+      <button class="btn-margin" (click)="auth.login()" *ngIf="!auth.authenticated()" style="float:right">Log In</button>
+      <button class="btn-margin" (click)="auth.logout()" *ngIf="auth.authenticated()" style="float:right">Log Out</button>
     </div>
   </div>
 </nav>
